@@ -25,6 +25,8 @@ NUGET
       System.Threading.ThreadPool (>= 4.0.10) - framework: >= netstandard16
       System.Threading.Timer (>= 4.0.1) - framework: >= netstandard16
       System.ValueTuple (>= 4.3) - framework: >= net10, netstandard10, netstandard11, netstandard12, netstandard13, netstandard14, netstandard15
+    FSharp.Data (2.3.3)
+      Zlib.Portable (>= 1.11) - framework: >= netstandard11, portable-net45+sl5+win8, portable-net45+win8, portable-net45+win8+wp8+wpa81
     FSharp.Data.TypeProviders (5.0.0.2)
       FSharp.Core (>= 3.1.2.5)
     Microsoft.NETCore.Platforms (1.1) - framework: >= net10, >= netstandard10, netstandard13
@@ -385,7 +387,6 @@ NUGET
       System.Security.Cryptography.Primitives (>= 4.3) - framework: dnxcore50, >= netstandard16
       System.Text.Encoding (>= 4.3) - framework: dnxcore50, >= netstandard16
       System.Threading (>= 4.3) - framework: dnxcore50, >= netstandard16
-    System.ServiceModel (1.0)
     System.Text.Encoding (4.3) - framework: >= net10, netstandard10, netstandard13, >= netstandard15
       Microsoft.NETCore.Platforms (>= 1.1) - framework: dnxcore50, netstandard10, >= netstandard13
       Microsoft.NETCore.Targets (>= 1.1) - framework: dnxcore50, netstandard10, >= netstandard13
@@ -426,3 +427,4 @@ NUGET
       System.Collections (>= 4.3) - framework: >= netstandard10
       System.Resources.ResourceManager (>= 4.3) - framework: >= netstandard10
       System.Runtime (>= 4.3) - framework: >= netstandard10
+    Zlib.Portable (1.11) - framework: >= netstandard11, portable-net45+sl5+win8, portable-net45+win8, portable-net45+win8+wp8+wpa81

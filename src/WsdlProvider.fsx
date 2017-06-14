@@ -1,6 +1,6 @@
 #r @"..\packages\FSharp.Data.TypeProviders\lib\net40\FSharp.Data.TypeProviders.dll"
-#r @"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.ServiceModel.dll"
-#r @"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Runtime.Serialization.dll"
+#r @"System.ServiceModel.dll"
+#r @"System.Runtime.Serialization.dll"
 open FSharp.Data.TypeProviders
 open System.ServiceModel
 
