@@ -1,7 +1,11 @@
 #r @"..\packages\FSharp.Data\lib\net40\Fsharp.Data.dll"
 open FSharp.Data
 
-type File = CsvProvider<"C:\Users\ext_jvy\Desktop\goodreads_library_export.csv">
+let [<Literal>] csvPath = "goodreads_library_export.csv"
+type File = CsvProvider<csvPath>
 let excel = new File()
-excel.Rows |> Seq.map (fun book -> (sprintf "{\"createdAt\" : ISODate(\"2017-04-07T23:03:52.692+02:00\"),
-    \"updatedAt\" : ISODate(\"2017-06-09T13:44:31.728+02:00\"), \"ISBN\" : %s, \"title\" : \"%s\", \"author\" : {\"lastName\" : \"%s\", \"firstName\" : \"\"}}" book.ISBN13 book.Title book.Author)) |> Seq.take 50 |> Seq.iter (printfn "%A")
+excel.Rows 
+|> Seq.sortByDescending (fun book -> book.``Average Rating``)
+|> Seq.take 10 
+|> Seq.map (fun book -> book.``Average Rating``, book.Title) 
+|> Seq.iter (printfn "%A")
