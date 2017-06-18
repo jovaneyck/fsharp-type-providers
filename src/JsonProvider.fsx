@@ -16,10 +16,6 @@ type Film = JsonProvider<FilmUrl>
 let root = SWAPI.GetSample()
 let buildUrl url id = sprintf "%s%s" url id
 
-//Let's fetch person number 13:
-let thirteen = People.Load(buildUrl root.People "13")
-printfn "%s" thirteen.Name
-
 let loadPeople (pageUrl) = 
     let rec iter (pageUrl : string) =
         seq{
