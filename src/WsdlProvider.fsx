@@ -4,12 +4,13 @@
 open FSharp.Data.TypeProviders
 open System.ServiceModel
 
-type SDSService = WsdlService<"http://servicedomainservice.do.dev.euc/DataRetrievalService.svc">
-let svc = SDSService.GetBasicHttpBinding_IDataRetrievalService()
-let response = 
-    svc.GetServiceScope(
-        new SDSService.ServiceTypes.Euroconsumers.ServiceDomainService.Contract.MessageContracts.GetServiceScopeRequest(
-            Id=1,
-            CultureCode="nl-BE"
-        ))
-printfn "%A" (response.ServiceScope.Id, response.ServiceScope.Name, response.ServiceScope.CssClassCode)
+type Service = WsdlService<"http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL">
+let svc = Service.GetCountryInfoServiceSoap12()
+
+let response = svc.FullCountryInfo("NG")
+
+printf "Languages of %s: " response.sName
+response.Languages
+|> Seq.map(fun lang -> lang.sName) 
+|> String.concat ","
+|> printfn "%s"

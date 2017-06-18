@@ -1,0 +1,21 @@
+[
+	{
+	    "title" : "Management 3.0",
+	    "author" : {
+	        "firstName" : "Jurgen",
+	        "lastName" : "Appelo"
+	    },
+	    "ISBN" : "978-0321123479",
+	    "createdAt" : "2017-04-07T23:03:52.692+02:00"
+	},
+	{
+	    "title" : "Management 3.0",
+	    "author" : {
+	        "firstName" : "Jurgen",
+	        "lastName" : "Appelo"
+	    },
+	    "ISBN" : "978-0321123479",
+	    "createdAt" : "2017-04-07T23:03:52.692+02:00",
+	    "readAt" : "2017-06-09T13:44:31.728+02:00"
+	}
+]
