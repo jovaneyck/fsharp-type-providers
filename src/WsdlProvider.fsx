@@ -1,6 +1,6 @@
 #r @"..\packages\FSharp.Data.TypeProviders\lib\net40\FSharp.Data.TypeProviders.dll"
 #r @"System.ServiceModel.dll"
-#r @"System.Runtime.Serialization.dll"
+#r @"System.Runtime.Serialization.dll" //Needed to see the generated contract types in you IDE.
 open FSharp.Data.TypeProviders
 open System.ServiceModel
 

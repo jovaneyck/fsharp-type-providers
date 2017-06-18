@@ -2,7 +2,7 @@
 open FSharp.Data
 open System
 
-//Easily talk to a RES API.
+//Easily talk to a REST API.
 let [<Literal>] URL = "http://swapi.co/api/"
 let [<Literal>] PeopleUrl = URL + "people/1"
 let [<Literal>] PagePeopleUrl = URL + "people/"
