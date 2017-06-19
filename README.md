@@ -1,5 +1,5 @@
 # fsharp-type-providers
-Accompanying code for my blog post on F# type providers
+Accompanying code for my [blog post](https://github.com/jovaneyck/fsharp-type-providers) on F# type providers
 
 ## Prerequisites
 * [F#](http://fsharp.org/use/windows/) with the fsi.exe REPL.
